@@ -13,70 +13,75 @@ There may be several reasons for someone to consider transferring a MySQL databa
 
 ### Transfer MySQL Data to SQL Server Using Import/Export Utility:
 Berikut ini adalah langkah-langkah yang digunakan untuk Memigrasikan Database dari MySQL ke SQL Server dengan metode Impor/Ekspor:
-Step 1: Download and Install the MySQL ODBC Connector. 
+
+### Step 1: Download and Install the MySQL ODBC Connector. 
 
 Pertama, unduh dan instal konektor ODBC. Tersedia di [Click here](https://downloads.mysql.com/archives/c-odbc/)
 
-Step 2: Open ODBC Data Source Administrator and Browse MySQL ODBC Driver.
+### Step 2: Open ODBC Data Source Administrator and Browse MySQL ODBC Driver.
 
 Now, open your ODBC Data source administrator from the Control Panel>>Administative tools. On the system DSN tab click Add, Browse the “MySQL ODBC driver” and press the finish button.
 
 ![image alt](https://github.com/Biancaninna/Data-Migration-Using-Wizard/blob/5f57e691398b85cd8d16215b74512ce572021fe2/Images/CREATE%20ODBC%20CONNECTOR%20FOR%20MYSQL%20.png) 
 
-Step 3: Input MySQL Server Connection Details.
+### Step 3: Input MySQL Server Connection Details.
 
 Input your MySQL Server connection details, check it, and click OK.
 
 ![image alt](https://github.com/Biancaninna/Data-Migration-Using-Wizard/blob/5f57e691398b85cd8d16215b74512ce572021fe2/Images/ODBC%20MYSQL.png) 
 
-Step 4: Perform the same steps for the SQL Server connection
+### Step 4: Perform the same steps for the SQL Server connection
 
 On the system DSN tab click Add, Browse the “SQL Server” and press the finish button.
 
 ![image alt](https://github.com/Biancaninna/MySQL-to-SQL-Server-Data-Migration/blob/830c44bb8215c0ae28c21bf2c043ba4d12c429fd/Images/CREATE%20ODBC%20CONNECTOR%20FOR%20SQL%20SERVER%20.png) 
 
 
-Step 5: Input SQL Server Connection Details.
+### Step 5: Input SQL Server Connection Details.
 
 Input your SQL Server connection details, check it, and click OK.
 
 ![image alt](https://github.com/Biancaninna/MySQL-to-SQL-Server-Data-Migration/blob/830c44bb8215c0ae28c21bf2c043ba4d12c429fd/Images/ODBC%20SQL%20SERVER.png) 
 
-Step 5: Launch the SQL Server Management Studio
+### Step 6: Launch the SQL Server Management Studio
 
 Next, Launch the SQL server management studio.
 
-Step 6: Create a New Database 
+### Step 7: Create a New Database 
 
 Click on NEXT, create a new Database, or use an existing database.
 
-Step 7: Click Import Data to Launch the SQL Server Import and Export Software.
+### Step 8: Click Import Data to Launch the SQL Server Import and Export Software.
 
 Right-click on the destination Database and select task then click Import Data to launch the Data Server Import and Export Wizard.
 
 ![image alt](https://github.com/Biancaninna/MySQL-to-SQL-Server-Data-Migration/blob/830c44bb8215c0ae28c21bf2c043ba4d12c429fd/Images/IMPORT%20DATA%20FROM%20MYSQL%20TO%20SQL%20SERVER.png) 
 
-Step 8: Choose the .NET Data provider for ODBC 
+### Step 9: Choose the .NET Data provider for ODBC 
 
 Choose the .NET Data provider for ODBC as a Data source and specify the DSN created before.
 
 ![image alt](https://github.com/Biancaninna/MySQL-to-SQL-Server-Data-Migration/blob/830c44bb8215c0ae28c21bf2c043ba4d12c429fd/Images/MYSQL%20DATA%20SOURCE.png) 
 
-Step 9: Enter the piece of information from your SQL Server Database
+### Step 10: Enter the piece of information from your SQL Server Database
 
 Now users have to choose the SQL server native client 10 as a destination, enter the details of their SQL Server Database, and then click Next.
 
-Step 10: Copy the Data from one or more tables
+### Step 11: Copy the Data from one or more tables
 
 Then, select Copy Data from one or more tables or view and click Next.
 
-Step 11: Choose the Source and Destination Tables
+### Step 12: Choose the Source and Destination Tables
 
 Further, select the source and destination tables. Users can enable the Identity insert using the edit mapping option.
 
-Step 12: Execution of the Package
+![image alt](https://github.com/Biancaninna/MySQL-to-SQL-Server-Data-Migration/blob/224f964b00837931754a09a5e885b50a190fe0f5/Images/CONTINUED%202.png) 
+
+### Step 13: Execution of the Package
 
 At last, execute the package and save it for the future if needed.
+
+### Then you have finished migrating data from MySQL to SQL Server
 
 
 
