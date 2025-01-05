@@ -1,6 +1,5 @@
 # MySQL to Microsoft SQL Server data migration Using the Wizard
 
-### Basic Differences Between MySQL and SQL
 There are many ways to migrate a MySQL Database to SQL Server, one of them can be using SQL Server Migration Assistant (SSMA). However, in this section, we will explain how to manually transfer data from MySQL to Microsoft SQL Server through SQL Server Management Studio's Import Data feature.
 
 ### Why do we need to migrate MySQL database to MS SQL Server?
