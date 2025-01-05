@@ -1,7 +1,7 @@
-# MySQL to Microsoft SQL Server data migration using the Wizard
+# MySQL to Microsoft SQL Server data migration Using the Wizard
 
 ### Basic Differences Between MySQL and SQL
-There are many ways to migrate a MySQL Database to SQL Server, one of them can be using SQL Server Migration Assistant (SSMA). However, in this section, we will explain how to manually transfer data from MySQL to Microsoft SQL Server through the Wizard.
+There are many ways to migrate a MySQL Database to SQL Server, one of them can be using SQL Server Migration Assistant (SSMA). However, in this section, we will explain how to manually transfer data from MySQL to Microsoft SQL Server through SQL Server Management Studio's Import Data feature.
 
 ### Why do we need to migrate MySQL database to MS SQL Server?
 There may be several reasons for someone to consider transferring a MySQL database to Microsoft SQL Server:
@@ -15,7 +15,7 @@ There may be several reasons for someone to consider transferring a MySQL databa
 Berikut ini adalah langkah-langkah yang digunakan untuk Memigrasikan Database dari MySQL ke SQL Server dengan metode Impor/Ekspor:
 Step 1: Download and Install the MySQL ODBC Connector. 
 
-Pertama, unduh dan instal konektor ODBC. Tersedia di [Click Here](https://downloads.mysql.com/archives/c-odbc/)
+Pertama, unduh dan instal konektor ODBC. Tersedia di [Click here](https://downloads.mysql.com/archives/c-odbc/)
 
 Step 2: Open ODBC Data Source Administrator and Browse MySQL ODBC Driver.
 
@@ -25,9 +25,65 @@ Now, open your ODBC Data source administrator from the Control Panel>>Administat
 
 Step 3: Input MySQL Server Connection Details.
 
-In the next Wizard, input your MySQL Server connection details, check it, and click OK.
+Input your MySQL Server connection details, check it, and click OK.
 
 ![image alt](https://github.com/Biancaninna/Data-Migration-Using-Wizard/blob/5f57e691398b85cd8d16215b74512ce572021fe2/Images/ODBC%20MYSQL.png) 
+
+Step 4: Perform the same steps for the SQL Server connection
+
+On the system DSN tab click Add, Browse the “SQL Server” and press the finish button.
+
+![image alt](https://github.com/Biancaninna/MySQL-to-SQL-Server-Data-Migration/blob/830c44bb8215c0ae28c21bf2c043ba4d12c429fd/Images/CREATE%20ODBC%20CONNECTOR%20FOR%20SQL%20SERVER%20.png) 
+
+
+Step 5: Input SQL Server Connection Details.
+
+Input your SQL Server connection details, check it, and click OK.
+
+![image alt](https://github.com/Biancaninna/MySQL-to-SQL-Server-Data-Migration/blob/830c44bb8215c0ae28c21bf2c043ba4d12c429fd/Images/ODBC%20SQL%20SERVER.png) 
+
+Step 5: Launch the SQL Server Management Studio
+
+Next, Launch the SQL server management studio.
+
+Step 6: Create a New Database 
+
+Click on NEXT, create a new Database, or use an existing database.
+
+Step 7: Click Import Data to Launch the SQL Server Import and Export Software.
+
+Right-click on the destination Database and select task then click Import Data to launch the Data Server Import and Export Wizard.
+
+![image alt](https://github.com/Biancaninna/MySQL-to-SQL-Server-Data-Migration/blob/830c44bb8215c0ae28c21bf2c043ba4d12c429fd/Images/IMPORT%20DATA%20FROM%20MYSQL%20TO%20SQL%20SERVER.png) 
+
+Step 8: Choose the .NET Data provider for ODBC 
+
+Choose the .NET Data provider for ODBC as a Data source and specify the DSN created before.
+
+![image alt](https://github.com/Biancaninna/MySQL-to-SQL-Server-Data-Migration/blob/830c44bb8215c0ae28c21bf2c043ba4d12c429fd/Images/MYSQL%20DATA%20SOURCE.png) 
+
+Step 9: Enter the piece of information from your SQL Server Database
+
+Now users have to choose the SQL server native client 10 as a destination, enter the details of their SQL Server Database, and then click Next.
+
+Step 10: Copy the Data from one or more tables
+
+Then, select Copy Data from one or more tables or view and click Next.
+
+Step 11: Choose the Source and Destination Tables
+
+Further, select the source and destination tables. Users can enable the Identity insert using the edit mapping option.
+
+Step 12: Execution of the Package
+
+At last, execute the package and save it for the future if needed.
+
+
+
+
+
+
+
 
 
 
